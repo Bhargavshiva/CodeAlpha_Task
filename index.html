@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🧠 Smart To-Do</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+      <select id="priority">
+        <option value="Low">Low 🔵</option>
+        <option value="Medium">Medium 🟡</option>
+        <option value="High">High 🔴</option>
+      </select>
+      <button onclick="addTask()">Add ➕</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
